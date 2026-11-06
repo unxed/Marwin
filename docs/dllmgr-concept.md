@@ -15,11 +15,6 @@
 Не цели: менять системный Wine; DLL от Microsoft (это winetricks); замена DLL с unix-частью
 и ядра системы — их правят заплатки (§16).
 
-Эталонная программа — FastStone Image Viewer 7.1: установщик
-`http://2g0.ru/fs/FSViewerSetup71.exe` (NSIS, 7 046 716 байт, sha256
-`2ee3aee9665ff3d8bc79cc82ca55b9f7d9ab9463ccac986d2c5170a9f7023c85`). Имя exe внутри
-(`FSViewer.exe`) проверяется в И0.
-
 Чем отличается от существующего: winetricks ставит нативные DLL Microsoft, в основном
 на весь префикс; менеджеры префиксов дают выбрать версию лишь для фиксированного набора
 компонентов (DXVK, VKD3D…), тоже на весь префикс.
@@ -328,7 +323,7 @@ TOML — `github.com/BurntSushi/toml`; остальное — стандартн
 
 ### Спайк И0
 
-Скрипт: [`dllmgr/spike/spike0.sh`](../dllmgr/spike/spike0.sh). Программа — эталонный FastStone 7.1 (§0).
+Скрипт: [`dllmgr/spike/spike0.sh`](../dllmgr/spike/spike0.sh).
 Порядок: `probe` (ничего не меняет) → по путям в логе выбрать `system` или `sxs` → `apply`
 → `probe` → проверить баги руками → `undo`. Вывод обоих `probe` — эталонные логи для И2.
 

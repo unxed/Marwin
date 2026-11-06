@@ -16,7 +16,7 @@ Runs Windows programs on Linux better. One project, several parts:
    it fixes the bugs FastStone Image Viewer hits. Plan:
    [#2](https://github.com/unxed/Marwin/issues/2).
    This would be another demonstration of how libraries for dllmgr can be built in BP.
-   We also plan to provide a recipe for installing cc580 from Wine 11 into Wine 9+ for the same purposes.
+   We also plan to provide a recipe for installing comctl32 from Wine 11 into Wine 9+ for the same purposes.
    
 And next to it is the main part,
 
@@ -34,8 +34,6 @@ No code yet. Plans for the runtime and cc580 moved here from unxed/bp#129 and un
   [unxed/bp#128](https://github.com/unxed/bp/issues/128).
 - **dllmgr** does not depend on Bp. Its work starts now (owner's decision, 2026-11-06), from
   iterations 0 and 1 of the concept.
-
-Reference application: FastStone Image Viewer 7.1 (installer URL and sha256 are in the concept, § 0).
 
 ## Files
 
